@@ -51,4 +51,57 @@ body {
   line-height: normal;
   text-decoration: none;
   padding: 13px 74px 13px 74px;
+}
+
+.product-box {
+  height: 556px;
+  background: #000915;
+}
+
+.game-box {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 32px;
+  padding-top: 128px;
+}
+.game-box__img-left {
+  position: relative;
+  width: 379px;
+  height: 300px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url("../img/game_1.jpg"), lightgray 50%/cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.game-box__img-center {
+  position: relative;
+  width: 379px;
+  height: 300px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url("../img/game_2.jpg"), lightgray 50%/cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.game-box__img-right {
+  position: relative;
+  width: 379px;
+  height: 300px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url("../img/game_3.jpg"), lightgray 50%/cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.game-box__name {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  color: #FFF;
+  font-family: inherit;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
 }/*# sourceMappingURL=style.css.map */
