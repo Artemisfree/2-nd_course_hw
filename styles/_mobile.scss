@@ -1,0 +1,57 @@
+@media (max-width: 767px){
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .heading {
+        height: 735px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) -7.35%, #000915 100%), url("../img/header_background.jpg"), lightgray -240.259px 0px / 294% 100% no-repeat;
+        background-repeat: no-repeat;
+        background-position: 33% 35%;
+        background-size: cover;
+
+        &__header {
+            color: #FFF;
+            text-align: center;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding-top: 238px;
+        }
+
+        &__text {
+            color: #FFF;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 22px;
+            margin-bottom: 32px;
+        }
+
+        .desktop {
+            display: none;
+        }
+
+        .mobile {
+            display: block;
+        }
+
+        &__button {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .product-box {
+        height: 1221px;
+    }
+
+    .game-box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
