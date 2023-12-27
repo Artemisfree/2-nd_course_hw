@@ -73,13 +73,13 @@ let e = prompt('Введите число');
 message = (d > 100 || e > 100)? 'Верно' : 'Неверно';
 alert(message);
 
-let a = '2'
-let b = '3'
+let a = '2';
+let b = '3';
 let summary = Number(a) + Number(b);
 alert(summary);
 
-let monthNumber = prompt('Введи номер месяца');
-switch (parseInt(monthNumber)) {
+let monthNumber = Number(prompt('Введи номер месяца'));
+switch (monthNumber) {
 	case 1:
 	case 2:
 	case 12:
@@ -105,20 +105,20 @@ switch (parseInt(monthNumber)) {
 		break
 }
 
-let a = Number(prompt('Пожалуйста, введите любое число'));
-console.log(!isNaN(a));
+a = Number(prompt('Пожалуйста, введите любое число'));
 message = (a % 2) === 0 ? 'Число четное' : 'Число нечетное'
 alert(message);
 
-let clientOS = navigator.userAgent;
+let clientOS = confirm('У тебя iOS?');
 console.log(clientOS);
+
 let clintDeviceYear = prompt('Год выпуска твоего телефона');
-if (clientOS.includes('iPhone') && clintDeviceYear >= 2015) {
+if ((clientOS === true) && clintDeviceYear >= 2015) {
 	alert('Установите версию приложения для iOS по ссылке');
-} else if (clientOS.includes('Android') && clintDeviceYear >= 2015) {
-	alert('Установите версию приложения для Android по ссылке');
-} else if (clientOS.includes('iPhone') && clintDeviceYear <= 2015) {
+} else if ((clientOS === false) && clintDeviceYear >= 2015) {
+	alert('Установите версию приложения для Android по ссылке')
+} else if (clientOS === true && clintDeviceYear <= 2015) {
 	alert('Установите облегченную версию приложения для iOS по ссылке')
-} else if (clientOS.includes('Android') && clintDeviceYear <= 2015) {
+} else if (clientOS === false && clintDeviceYear <= 2015) {
 	alert('Установите облегченную версию приложения для Android по ссылке')
 }
