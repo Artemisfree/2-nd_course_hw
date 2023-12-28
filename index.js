@@ -106,12 +106,13 @@ switch (monthNumber) {
 }
 
 a = Number(prompt('Пожалуйста, введите любое число'));
-message = (a % 2) === 0 ? 'Число четное' : 'Число нечетное'
-alert(message);
+if (!isNaN(a) === true) {
+    message = (a % 2) === 0 ? 'Число четное' : 'Число нечетное'
+    alert(message);
+}
 
 let clientOS = confirm('У тебя iOS?');
 console.log(clientOS);
-
 let clintDeviceYear = prompt('Год выпуска твоего телефона');
 if ((clientOS === true) && clintDeviceYear >= 2015) {
 	alert('Установите версию приложения для iOS по ссылке');
