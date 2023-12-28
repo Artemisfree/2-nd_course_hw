@@ -109,6 +109,8 @@ a = Number(prompt('Пожалуйста, введите любое число'))
 if (!isNaN(a) === true) {
     message = (a % 2) === 0 ? 'Число четное' : 'Число нечетное'
     alert(message);
+} else {
+    alert('Это не число')
 }
 
 let clientOS = confirm('У тебя iOS?');
