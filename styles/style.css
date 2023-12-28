@@ -82,7 +82,7 @@ body {
   transform: scale(1.04);
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0);
 }
-.game-box__img-left {
+.game-box__img--left {
   position: relative;
   width: 379px;
   height: 300px;
@@ -92,7 +92,7 @@ body {
   background-position: center;
   background-size: cover;
 }
-.game-box__img-center {
+.game-box__img--center {
   position: relative;
   width: 379px;
   height: 300px;
@@ -102,7 +102,7 @@ body {
   background-position: center;
   background-size: cover;
 }
-.game-box__img-right {
+.game-box__img--right {
   position: relative;
   width: 379px;
   height: 300px;

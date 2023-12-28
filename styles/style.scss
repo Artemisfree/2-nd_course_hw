@@ -90,7 +90,7 @@ body {
         }
     }
 
-    &__img-left {
+    &__img--left {
         position: relative;
         width: 379px;
         height: 300px;
@@ -101,7 +101,7 @@ body {
         background-size: cover;
     }
 
-    &__img-center {
+    &__img--center {
         position: relative;
         width: 379px;
         height: 300px;
@@ -112,7 +112,7 @@ body {
         background-size: cover;
     }
 
-        &__img-right {
+        &__img--right {
         position: relative;
         width: 379px;
         height: 300px;
