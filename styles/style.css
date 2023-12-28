@@ -39,10 +39,16 @@ body {
 .heading__text_bold {
   font-weight: 700;
 }
+.heading .desktop {
+  display: block;
+}
+.heading .mobile {
+  display: none;
+}
 .heading__link {
   flex-shrink: 0;
   border-radius: 30px;
-  background: #9C0332;
+  background-color: #9C0332;
   font-family: inherit;
   color: #FFF;
   font-size: 18px;
@@ -51,6 +57,11 @@ body {
   line-height: normal;
   text-decoration: none;
   padding: 13px 74px 13px 74px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.heading__link:hover {
+  background-color: #68001f;
+  color: #bcbcbc;
 }
 
 .product-box {
@@ -64,7 +75,14 @@ body {
   gap: 32px;
   padding-top: 128px;
 }
-.game-box__img-left {
+.game-box__hover {
+  transition: transform 0.4s ease-in-out;
+}
+.game-box__hover:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0);
+}
+.game-box__img--left {
   position: relative;
   width: 379px;
   height: 300px;
@@ -74,7 +92,7 @@ body {
   background-position: center;
   background-size: cover;
 }
-.game-box__img-center {
+.game-box__img--center {
   position: relative;
   width: 379px;
   height: 300px;
@@ -84,7 +102,7 @@ body {
   background-position: center;
   background-size: cover;
 }
-.game-box__img-right {
+.game-box__img--right {
   position: relative;
   width: 379px;
   height: 300px;
@@ -104,4 +122,53 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .heading {
+    height: 735px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url("../img/header_background.jpg"), lightgray -240.259px 0px/294% 100% no-repeat;
+    background-repeat: no-repeat;
+    background-position: 33% 35%;
+    background-size: cover;
+  }
+  .heading__header {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 238px;
+  }
+  .heading__text {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    margin-bottom: 32px;
+  }
+  .heading .desktop {
+    display: none;
+  }
+  .heading .mobile {
+    display: block;
+  }
+  .heading__button {
+    display: flex;
+    justify-content: center;
+  }
+  .product-box {
+    height: 1221px;
+  }
+  .game-box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */
