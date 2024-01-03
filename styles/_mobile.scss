@@ -4,6 +4,14 @@
         padding-right: 16px;
     }
 
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
     .heading {
         height: 735px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) -7.35%, #000915 100%), url("../img/header_background.jpg"), lightgray -240.259px 0px / 294% 100% no-repeat;
@@ -31,14 +39,6 @@
             margin-bottom: 32px;
         }
 
-        .desktop {
-            display: none;
-        }
-
-        .mobile {
-            display: block;
-        }
-
         &__button {
             display: flex;
             justify-content: center;
@@ -52,6 +52,42 @@
     .game-box {
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .seasons {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex-shrink: 0;
+        justify-content: flex-start;
+    }
+
+    .seasons-box {
+        padding-top: 51px;
+        padding-bottom: 64px;
+
+        &__heading {
+            text-align: center;
+            font-size: 32px;
+        }
+
+        &__text {
+            text-align: center;
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        &__button {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .seasons-pic__headphones {
+        padding-top: 0;
+        max-width: 100%;
+        height: auto;
+        padding-bottom: 85px;
     }
 
 }

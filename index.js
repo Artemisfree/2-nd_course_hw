@@ -185,13 +185,87 @@ compNum(a, b);
 a = prompt(`Введите любое число`);
 
 function evenOrOdd(a) {
-    if (!isNaN(a) === true) {
-        message = (a % 2) === 0 ? 'Число четное' : 'Число нечетное'
+        message = (a % 2) === 0 ? 'Число четное' : 'Число нечетное';
         console.log(message);
-    } else {
-        console.log('Это не число');
-    };
 }
 
 evenOrOdd(a);
 
+a = prompt(`Введите число`);
+
+function exp(a) {
+    let result = a ** 2;
+    return result
+}
+
+let result = exp(a);
+console.log(result);
+
+let age = prompt(`Сколько тебе лет?`);
+
+function sayHello(age) {
+    if (age < 0) {
+        alert('Вы ввели неправильное значение')
+    } else if (age >= 13) {
+        alert('Добро пожаловать!')
+    } else {
+        alert('Привет, друг!')
+    }
+}
+
+sayHello(age);
+
+a = prompt(`Введите любое число`);
+b = prompt(`Введите любое число`);
+
+function checkForNumber(a, b) {
+	if (!isNaN(a) && !isNaN(b) === true) {
+        let multip = a * b;
+        console.log(multip);
+	} else {
+		console.log('Одно или оба значения не являются числом')
+	};
+}
+
+checkForNumber(a, b);
+
+a = prompt(`Введите число`)
+
+function exponentiation(a) {
+    if (!isNaN(a) === true) {
+        let triplexA = a ** 3;
+        return triplexA
+    } else {
+        console.log('Переданный параметр не является числом');
+    }
+}
+
+let triplexA = exponentiation(a);
+console.log(`${a} в кубе равняется ${triplexA}`);
+
+function getArea() {
+    this.circleArea = Math.PI * this.radius ** 2;
+    return this.circleArea
+}
+
+function getPerimeter() {
+    this.perimeterCircle = 2 * Math.PI * this.radius;
+    return this.perimeterCircle
+}
+
+const circle1 = {
+	radius: prompt('Задай радиус для 1-ой окружности'),
+	getArea: getArea,
+	getPerimeter: getPerimeter,
+}
+
+const circle2 = {
+	radius: prompt('Задай радиус для 2-ой окружности'),
+	getArea: getArea,
+	getPerimeter: getPerimeter,
+};
+
+console.log(circle1.getArea());
+console.log(circle1.getPerimeter());
+console.log(circle2.getArea());
+console.log(circle2.getPerimeter());
