@@ -126,42 +126,42 @@
 
 
 // hw-4 JS
-let i = 0;
-while (i < 2) {
-    console.log('Привет');
-    i++;
-}
+// let i = 0;
+// while (i < 2) {
+//     console.log('Привет');
+//     i++;
+// }
 
-i = 1;
-while (i <= 5) {
-    console.log(i);
-    i++;
-}
+// i = 1;
+// while (i <= 5) {
+//     console.log(i);
+//     i++;
+// }
 
-i = 7;
-while (i <= 22) {
-    console.log(i);
-    i++;
-}
+// i = 7;
+// while (i <= 22) {
+//     console.log(i);
+//     i++;
+// }
 
-const obj = {
-	'Коля': '200',
-	'Вася': '300',
-	'Петя': '400'
-};
-for (let name in obj) {
-    console.log(`${name} — зарплата ${obj[name]}`)
-};
+// const obj = {
+// 	'Коля': '200',
+// 	'Вася': '300',
+// 	'Петя': '400'
+// };
+// for (let name in obj) {
+//     console.log(`${name} — зарплата ${obj[name]}`)
+// };
 
-let n = 1000;
-let num = 0;
-while (n > 50) {
-    n /= 2;
-    num++;
-}
-console.log(`Количество итераций: ${num}`);
+// let n = 1000;
+// let num = 0;
+// while (n > 50) {
+//     n /= 2;
+//     num++;
+// }
+// console.log(`Количество итераций: ${num}`);
 
-let friday = 1;
-for (; friday <= 31; friday += 7) {
-    console.log(`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`)
-}
+// let friday = 1;
+// for (; friday <= 31; friday += 7) {
+//     console.log(`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`)
+// }
