@@ -172,24 +172,26 @@ let b = prompt(`Введите второе число`);
 
 function compNum(a, b) {
     if (a > b) {
-        console.log(b);
+        return b;
     } else if (a < b) {
-        console.log(a);
+        return a;
     } else {
-        console.log(a);
+        return a;
     };
 }
 
-compNum(a, b);
+let result1 = compNum(a, b);
+console.log(result1);
 
 a = prompt(`Введите любое число`);
 
 function evenOrOdd(a) {
-        message = (a % 2) === 0 ? 'Число четное' : 'Число нечетное';
-        console.log(message);
+        let message = (a % 2) === 0 ? 'Число четное' : 'Число нечетное';
+        return message;
 }
 
-evenOrOdd(a);
+let result2 = evenOrOdd(a);
+console.log(result2);
 
 a = prompt(`Введите число`);
 
@@ -221,27 +223,30 @@ b = prompt(`Введите любое число`);
 function checkForNumber(a, b) {
 	if (!isNaN(a) && !isNaN(b) === true) {
         let multip = a * b;
-        console.log(multip);
+        return multip;
 	} else {
-		console.log('Одно или оба значения не являются числом')
+		return('Одно или оба значения не являются числом')
 	};
 }
 
-checkForNumber(a, b);
+let result5 = checkForNumber(a, b);
+console.log(result5);
 
 a = prompt(`Введите число`)
 
 function exponentiation(a) {
     if (!isNaN(a) === true) {
         let triplexA = a ** 3;
-        return triplexA
+        let answer = `${a} в кубе равняется ${triplexA}`
+        return answer
     } else {
-        console.log('Переданный параметр не является числом');
+        return('Переданный параметр не является числом');
     }
 }
 
-let triplexA = exponentiation(a);
-console.log(`${a} в кубе равняется ${triplexA}`);
+
+let result6 = exponentiation(a);
+console.log(result6);
 
 function getArea() {
     this.circleArea = Math.PI * this.radius ** 2;
