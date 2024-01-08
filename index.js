@@ -165,3 +165,112 @@
 // for (; friday <= 31; friday += 7) {
 //     console.log(`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`)
 // }
+
+//hw-5 JS
+let a = prompt(`Введите первое число`);
+let b = prompt(`Введите второе число`);
+
+function compNum(a, b) {
+    if (a > b) {
+        return b;
+    } else if (a < b) {
+        return a;
+    } else {
+        return a;
+    };
+}
+
+let result1 = compNum(a, b);
+console.log(result1);
+
+a = prompt(`Введите любое число`);
+
+function evenOrOdd(a) {
+        let message = (a % 2) === 0 ? 'Число четное' : 'Число нечетное';
+        return message;
+}
+
+let result2 = evenOrOdd(a);
+console.log(result2);
+
+a = prompt(`Введите число`);
+
+function exp(a) {
+    let result = a ** 2;
+    return result
+}
+
+let result = exp(a);
+console.log(result);
+
+let age = prompt(`Сколько тебе лет?`);
+
+function sayHello(age) {
+    if (age < 0) {
+        alert('Вы ввели неправильное значение')
+    } else if (age >= 13) {
+        alert('Добро пожаловать!')
+    } else {
+        alert('Привет, друг!')
+    }
+}
+
+sayHello(age);
+
+a = prompt(`Введите любое число`);
+b = prompt(`Введите любое число`);
+
+function checkForNumber(a, b) {
+	if (!isNaN(a) && !isNaN(b) === true) {
+        let multip = a * b;
+        return multip;
+	} else {
+		return('Одно или оба значения не являются числом')
+	};
+}
+
+let result5 = checkForNumber(a, b);
+console.log(result5);
+
+a = prompt(`Введите число`)
+
+function exponentiation(a) {
+    if (!isNaN(a) === true) {
+        let triplexA = a ** 3;
+        let answer = `${a} в кубе равняется ${triplexA}`
+        return answer
+    } else {
+        return('Переданный параметр не является числом');
+    }
+}
+
+
+let result6 = exponentiation(a);
+console.log(result6);
+
+function getArea() {
+    this.circleArea = Math.PI * this.radius ** 2;
+    return this.circleArea
+}
+
+function getPerimeter() {
+    this.perimeterCircle = 2 * Math.PI * this.radius;
+    return this.perimeterCircle
+}
+
+const circle1 = {
+	radius: prompt('Задай радиус для 1-ой окружности'),
+	getArea: getArea,
+	getPerimeter: getPerimeter,
+}
+
+const circle2 = {
+	radius: prompt('Задай радиус для 2-ой окружности'),
+	getArea: getArea,
+	getPerimeter: getPerimeter,
+};
+
+console.log(circle1.getArea());
+console.log(circle1.getPerimeter());
+console.log(circle2.getArea());
+console.log(circle2.getPerimeter());
