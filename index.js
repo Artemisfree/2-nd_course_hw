@@ -244,7 +244,6 @@
 //     }
 // }
 
-
 // let result6 = exponentiation(a);
 // console.log(result6);
 
@@ -274,3 +273,131 @@
 // console.log(circle1.getPerimeter());
 // console.log(circle2.getArea());
 // console.log(circle2.getPerimeter());
+
+
+//hw-6 JS
+const numbers = [1, 5, 4, 10, 0, 3];
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] == 10) {
+        console.log(numbers[i]);
+        break;
+    }
+};
+
+console.log(numbers.indexOf(4));
+
+const numbs = [1, 3, 5, 10, 20];
+console.log(numbs.join(' '));
+
+let num = [];
+for (let i = 0; i < 3; i++) {
+    const array = [];
+    for(let j = 0; j < 3; j++) {
+        array.push(1);
+    }
+    num.push(array);
+}
+console.log(num);
+
+const arrayNext = [1, 1, 1];
+arrayNext.push(2, 2, 2);
+console.log(arrayNext);
+
+let arrayDel = [9, 8, 7, 'a', 6, 5];
+arrayDel = arrayDel.sort();
+arrayDel.pop();
+console.log(arrayDel);
+
+let guess = Number(prompt('Угадай число'));
+if (arrayDel.includes(parseInt(guess))) {
+    alert('Угадал!');
+} else {
+    alert('Не угадал :(');
+}
+
+let string = 'abcdef';
+let arrayString = string.split('');
+arrayString.reverse();
+let stringJoin = arrayString.join('');
+console.log(stringJoin);
+
+let arrayDouble = [
+    [1, 2, 3],
+    [4, 5, 6]
+]
+let arrayConcat = arrayDouble[0].concat(arrayDouble[1]);
+console.log(arrayConcat);
+
+let arrayRandom = [];
+for (let i = 0; i < 5; i++) {
+    arrayRandom.push(i * 2);
+}
+console.log(arrayRandom);
+
+let total = [];
+for (let i = 0; i < arrayRandom.length - 1; i++) {
+    let sum = arrayRandom[i] + arrayRandom[i + 1];
+    total.push(sum);
+}
+console.log(total);
+
+let squaringArray = (nums) => {
+    let arrayNums = nums.split(',').map(Number);
+    let squar = arrayNums.map(el => el ** 2);
+    return squar
+}
+let nums = prompt('введи массив чисел через запятую');
+let result = squaringArray(nums);
+console.log(result);
+
+let array = [];
+let stringArray = (strings) => {
+    for (let i = 0; i < strings.length; i++) {
+        let count = strings[i].length;
+        array.push(count);
+    }
+    return array
+}
+
+let strings = ['слово', '', 'слог', 'длинное предложение', 'буква'];
+let resultCount = stringArray(strings);
+console.log(resultCount);
+
+function filterPositive(array) {
+    let negativeNum = []
+	for (let i = 0; i < array.length; i++) {
+        if (array[i] < 0){
+            negativeNum.push(array[i]);
+        }
+    }
+    console.log(negativeNum);
+}
+
+filterPositive([-1, 0, 5, -10, 56])
+filterPositive([-25, 25, 0, -1000, -2])
+
+let min = 0;
+let max = 10;
+let randomArray = []
+let evenArray = []
+for (let i = 0; i < 10; i++) {
+    let randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+    randomArray.push(randomNum);
+}
+for (let j = 0; j < randomArray.length; j++) {
+        if (randomArray[j] % 2 === 0) {
+            evenArray.push(randomArray[j])
+        }
+}
+console.log(randomArray)
+console.log(evenArray);
+
+let randomSix = [];
+for (let i = 0; i < 6; i++) {
+    let randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+    randomSix.push(randomNum);
+}
+let totalSix = randomSix.reduce((a, b) => a + b); 
+let average = totalSix / randomSix.length;
+console.log(randomSix)
+console.log(average);
