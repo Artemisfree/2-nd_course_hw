@@ -524,13 +524,13 @@ function filter(array, ruleFunction) {
 
 console.log(filter([3, -4, 1, 9], isPositive));
 
-const people = [
+const people1 = [
    {name: 'Глеб', gender: 'male'},
    {name: 'Анна', gender: 'female'},
    {name: 'Олег', gender: 'male'},
    {name: 'Оксана', gender: 'female'}
 ];
-console.log(filter(people, isMale));
+console.log(filter(people1, isMale));
 
 const dateTimer = (timeInterval) => {
     const interval = setInterval(() => {
