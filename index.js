@@ -495,3 +495,70 @@
 //     console.log(fullDate);
 // }
 // date(2024, 1, 22, 17, 51, 33);
+
+
+// hw-8 JS
+const people = [
+   { name: 'Глеб', age: 29 },
+   { name: 'Анна', age: 17 },
+   { name: 'Олег', age: 7 },
+   { name: 'Оксана', age: 47 }
+];
+console.log(people.sort((a, b) => a.age - b.age));
+
+function isPositive(value) {
+    return value > 0
+}
+function isMale(person) {
+    return person.gender === 'male'
+}
+function filter(array, ruleFunction) {
+    const newArray = [];
+    for (let i = 0; i < array.length; i++) {
+        if (ruleFunction(array[i])) {
+            newArray.push(array[i]);
+        }
+    }
+    return newArray
+}
+
+console.log(filter([3, -4, 1, 9], isPositive));
+
+const people = [
+   {name: 'Глеб', gender: 'male'},
+   {name: 'Анна', gender: 'female'},
+   {name: 'Олег', gender: 'male'},
+   {name: 'Оксана', gender: 'female'}
+];
+console.log(filter(people, isMale));
+
+const dateTimer = (timeInterval) => {
+    const interval = setInterval(() => {
+        let currentDate = new Date();
+        console.log(currentDate);
+    }, 3 * 1000);
+    setTimeout(() => {
+        clearInterval(interval);
+        console.log(`${timeInterval} секунд прошло`)
+    }, timeInterval * 1000);
+};
+dateTimer(30);
+
+function delayForSecond(callback) {
+	setTimeout(callback, 1000);
+}
+
+delayForSecond(function () {
+	console.log('Привет, Глеб!')
+})
+
+function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+				if(cb) { 	cb(); }
+    }, 1000)
+}
+function sayHi (name) {
+    console.log(`Привет, ${name}!`);
+}
+delayForSecond(() => sayHi('Глеб'));
