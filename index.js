@@ -404,94 +404,94 @@
 
 
 //hw-7 js
-let stringJs = 'js';
-console.log(stringJs.toLocaleUpperCase());
+// let stringJs = 'js';
+// console.log(stringJs.toLocaleUpperCase());
 
-function searchStart(array, search) {
-    let newArray = [];
-    array.forEach(el => {
-        if (el.toLowerCase().startsWith(search.toLowerCase())) {
-            newArray.push(el);
-        }
-    });
-    console.log(newArray);
-}
+// function searchStart(array, search) {
+//     let newArray = [];
+//     array.forEach(el => {
+//         if (el.toLowerCase().startsWith(search.toLowerCase())) {
+//             newArray.push(el);
+//         }
+//     });
+//     console.log(newArray);
+// }
 
-searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко');
-searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру');
-searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино');
+// searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко');
+// searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру');
+// searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино');
 
-let a = 32.58884;
-console.log(Math.floor(a));
-console.log(Math.ceil(a));
-console.log(Math.round(a));
+// let a = 32.58884;
+// console.log(Math.floor(a));
+// console.log(Math.ceil(a));
+// console.log(Math.round(a));
 
-const numbers = [52, 53, 49, 77, 21, 32];
-console.log(Math.max(...numbers));
-console.log(Math.min(...numbers));
+// const numbers = [52, 53, 49, 77, 21, 32];
+// console.log(Math.max(...numbers));
+// console.log(Math.min(...numbers));
 
-let getRandomInt = (minValue, maxValue) => {
-    return Math.round(Math.random() * (maxValue - minValue)) + minValue;
-}
-console.log(getRandomInt(1, 10));
+// let getRandomInt = (minValue, maxValue) => {
+//     return Math.round(Math.random() * (maxValue - minValue)) + minValue;
+// }
+// console.log(getRandomInt(1, 10));
 
-let getRandomArrNumbers = (maxValue) => {
-    let array = [];
-    for (let i = 0; i < Math.floor(maxValue / 2); i++) {
-        let randomNumber = Math.round(Math.random() * maxValue);
-        array.push(randomNumber);
-    }
-    console.log(array);
-}
-getRandomArrNumbers(7);
-getRandomArrNumbers(12);
+// let getRandomArrNumbers = (maxValue) => {
+//     let array = [];
+//     for (let i = 0; i < Math.floor(maxValue / 2); i++) {
+//         let randomNumber = Math.round(Math.random() * maxValue);
+//         array.push(randomNumber);
+//     }
+//     console.log(array);
+// }
+// getRandomArrNumbers(7);
+// getRandomArrNumbers(12);
 
-let firstValue = Number(prompt('Введи перове число'));
-let secondValue = Number(prompt('Введи второе число'));
-let getRandomNum = (firstValue, secondValue) => {
-    if (firstValue < secondValue) {
-        return Math.round(Math.random() * (secondValue - firstValue)) + firstValue;
-    } else {
-        return Math.round(Math.random() * (firstValue - secondValue)) + secondValue;
-    }
-}
-console.log(getRandomNum(firstValue, secondValue));
+// let firstValue = Number(prompt('Введи перове число'));
+// let secondValue = Number(prompt('Введи второе число'));
+// let getRandomNum = (firstValue, secondValue) => {
+//     if (firstValue < secondValue) {
+//         return Math.round(Math.random() * (secondValue - firstValue)) + firstValue;
+//     } else {
+//         return Math.round(Math.random() * (firstValue - secondValue)) + secondValue;
+//     }
+// }
+// console.log(getRandomNum(firstValue, secondValue));
 
-let currentDate = new Date();
-console.log(currentDate);
+// let currentDate = new Date();
+// console.log(currentDate);
 
-let currentMilliSec = +currentDate;
-let milliSecAgo73 = 73 * 24 * 60 * 60 * 1000;
-let daysAgo73 = new Date(currentMilliSec + milliSecAgo73);
-console.log(daysAgo73);
+// let currentMilliSec = +currentDate;
+// let milliSecAgo73 = 73 * 24 * 60 * 60 * 1000;
+// let daysAgo73 = new Date(currentMilliSec + milliSecAgo73);
+// console.log(daysAgo73);
 
-function date(...params) {
-    const days = [
-			'Воскресенье',
-			'Понедельник',
-			'Вторник',
-			'Среда',
-			'Четверг',
-			'Пятница',
-			'Суббота',
-		];
-    const months = [
-			'Январь',
-			'Февраль',
-			'Март',
-			'Апрель',
-			'Май',
-			'Июнь',
-			'Июль',
-			'Август',
-			'Сентябрь',
-			'Октябрь',
-			'Ноябрь',
-			'Декабрь',
-		];
-    let myDate = new Date(...params);
-    let fullDate = 'Дата: ' + myDate.getDate() + ' ' + months[myDate.getMonth()] + ' ' +
-		myDate.getFullYear() + ' - это ' + days[myDate.getDay()] + '\nВремя: ' + myDate.getHours() + ':' + myDate.getMinutes() + ':' + myDate.getSeconds();
-    console.log(fullDate);
-}
-date(2024, 1, 22, 17, 51, 33);
+// function date(...params) {
+//     const days = [
+// 			'Воскресенье',
+// 			'Понедельник',
+// 			'Вторник',
+// 			'Среда',
+// 			'Четверг',
+// 			'Пятница',
+// 			'Суббота',
+// 		];
+//     const months = [
+// 			'Январь',
+// 			'Февраль',
+// 			'Март',
+// 			'Апрель',
+// 			'Май',
+// 			'Июнь',
+// 			'Июль',
+// 			'Август',
+// 			'Сентябрь',
+// 			'Октябрь',
+// 			'Ноябрь',
+// 			'Декабрь',
+// 		];
+//     let myDate = new Date(...params);
+//     let fullDate = 'Дата: ' + myDate.getDate() + ' ' + months[myDate.getMonth()] + ' ' +
+// 		myDate.getFullYear() + ' - это ' + days[myDate.getDay()] + '\nВремя: ' + myDate.getHours() + ':' + myDate.getMinutes() + ':' + myDate.getSeconds();
+//     console.log(fullDate);
+// }
+// date(2024, 1, 22, 17, 51, 33);
