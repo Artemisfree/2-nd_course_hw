@@ -495,3 +495,6 @@
 //     console.log(fullDate);
 // }
 // date(2024, 1, 22, 17, 51, 33);
+
+
+// hw-8 JS
