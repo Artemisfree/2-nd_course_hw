@@ -552,7 +552,7 @@ delayForSecond(function () {
 	console.log('Привет, Глеб!')
 })
 
-function delayForSecond(cb) {
+function delayForSecond1(cb) {
     setTimeout(() => {
         console.log('Прошла одна секунда');
 				if(cb) { 	cb(); }
@@ -561,4 +561,4 @@ function delayForSecond(cb) {
 function sayHi (name) {
     console.log(`Привет, ${name}!`);
 }
-delayForSecond(() => sayHi('Глеб'));
+delayForSecond1(() => sayHi('Глеб'));
