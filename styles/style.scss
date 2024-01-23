@@ -200,5 +200,64 @@ body {
     padding-top: 233px;
 }
 
+.remember {
+    height: 800px;
+    background-color: #000915;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.remember-box {
+    padding-top: 282px;
+    padding-bottom: 282px;
+
+    &__heading {
+        color: #FFF;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-bottom: 32px;
+    }
+
+    &__text {
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+        padding-bottom: 32px;
+    }
+
+    &__button {
+        padding-top: 13px;
+    }
+
+    &__link {
+        flex-shrink: 0;
+        border-radius: 30px;
+        background-color: #9C0332;
+        font-family: inherit;
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
+        padding: 13px 74px 13px 74px;
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+            background-color: #68001f;
+            color: #bcbcbc;
+        }
+    }
+}
+
+.remember-pic__headphones {
+    padding-top: 238px;
+}
 
 @import 'mobile';
